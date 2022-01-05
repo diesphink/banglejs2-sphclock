@@ -1,7 +1,7 @@
 {
   "schedule": [
-    { "data": "2022-01-05T09:00:00Z", "descricao": "Teste" },
-    { "data": "2022-01-12T10:00:00Z", "descricao": "SCRUM Gondoleye" }
+    { "data": "2022-01-06T09:00:00Z", "descricao": "Test 1" },
+    { "data": "2022-01-06T10:00:00Z", "descricao": "SCRUM Gondoleye" }
   ],
   "weather": [
     {
