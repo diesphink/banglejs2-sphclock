@@ -110,6 +110,11 @@ exports.drawCalendar = function (date) {
       return acumulador + `${E.decodeUTF8(v.descricao).toUpperCase()}\n`;
     }, "");
     g.drawString(text, 50, 136);
+  } else {
+    g.setFontLECO1976Regular14(); 
+    g.setFontAlign(0, 0);
+    g.setColor("#888");
+    g.drawString("SEM COMPROMISSOS\nNA AGENDA", 88, 150);
   }
 };
 
