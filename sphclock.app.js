@@ -70,8 +70,12 @@ Bangle.on("charging", function () {
 });
 
 Bangle.on("lock", function () {
-  if (state.show == CALENDAR) state.show = CLOCK;
-  draw(LOCK_CHANGE);
+  if (state.show == CALENDAR) {
+    state.show = CLOCK;
+    draw(INIT);
+  } else {
+    draw(LOCK_CHANGE);
+  }
 });
 
 Bangle.on("touch", function (button, xy) {
