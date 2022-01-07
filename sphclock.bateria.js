@@ -3,7 +3,6 @@ exports.drawBattery = function (x, y, steps, step_size) {
   step_size = step_size || 4;
   // Battery
   battery = E.getBattery();
-  // battery = 85;
   g.setFont("6x8");
   if (Bangle.isCharging())
   g.setColor("#00F");
@@ -51,6 +50,10 @@ exports.drawBattery = function (x, y, steps, step_size) {
       y += step_size + 1;
     }
   }
+
+  g.setColor("#FFF");
+  g.fillRect(x - 5, y + 2, x + 10, y + 12);
+
   g.setColor("#000");
   g.setFontAlign(0, 0);
   g.drawString(`${battery}`, x + 4, y + 8);
